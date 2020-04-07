@@ -142,14 +142,45 @@ def color_translator(color):
 		hex_color = "#0000ff"
 	else:
 		hex_color = "unknown"
-	return ""
+	return hex_color
 
-print(color_translator("blue")) # Should be #0000ff
-print(color_translator("yellow")) # Should be unknown
-print(color_translator("red")) # Should be #ff0000
-print(color_translator("black")) # Should be unknown
-print(color_translator("green")) # Should be #00ff00
-print(color_translator("")) # Should be unknown
+print(color_translator("blue"))
+print(color_translator("yellow"))
+print(color_translator("red"))
+print(color_translator("black"))
+print(color_translator("green"))
+print(color_translator(""))
 
 
 "big" > "small"
+
+
+def sum(x, y):
+		return(x+y)
+print(sum(sum(1,2), sum(3,4)))
+
+
+def longest_word(word1, word2, word3):
+	if len(word1) >= len(word2) and len(word1) >= len(word3):
+		word = word1
+	elif len(word2) >= len(word1) and len(word2) >= len(word3):
+		word = word2
+	else:
+		word = word3
+	return(word)
+
+print(longest_word("chair", "couch", "table"))
+print(longest_word("bed", "bath", "beyond"))
+print(longest_word("laptop", "notebook", "desktop"))
+
+
+
+def fractional_part(numerator, denominator):
+    return float((numerator % denominator)) / denominator  if denominator != 0 else 0
+
+print(fractional_part(5, 5)) # Should be 0
+print(fractional_part(5, 4)) # Should be 0.25
+print(fractional_part(5, 3)) # Should be 0.66...
+print(fractional_part(5, 2)) # Should be 0.5
+print(fractional_part(5, 0)) # Should be 0
+print(fractional_part(0, 5)) # Should be 0

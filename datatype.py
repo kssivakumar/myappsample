@@ -12,7 +12,7 @@ total = 5 + 10 + 15 + 60 + 75
 files = 5
 average = total / files
 print("The averag size is: " + str(average))
-print("(total)" + "(files)" = " (total) + (files))
+
 
 
 a = 2
