@@ -109,3 +109,50 @@ tina.color("orange")
 tina.left(180)
 tina.forward(75)
 wn.exitonclick()
+
+
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+tess = turtle.Turtle()
+tess.color("blue")
+tess.shape("turtle")
+
+
+dist = 5
+tess.up()
+for _ in range(30):
+    tess.stamp()
+    tess.forward(dist)
+    tess.right(24)
+    dist = dist + 2
+    print(dist)
+wn.exitonclick()
+
+
+import turtle
+wn = turtle.Screen()
+jose = turtle.Turtle()
+jose.shape("turtle")
+jose.penup()
+for size in range(10):
+    jose.forward(50)
+    jose.stamp()
+    jose.forward(-50)
+    jose.right(36)
+wn.exitonclick()
+
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+nikea = turtle.Turtle()
+nikea.color("black")
+nikea.shape("turtle")
+
+nikea.penup()
+for size in range(3):
+    nikea.forward(50)
+    nikea.stamp()
+wn.exitonclick()
