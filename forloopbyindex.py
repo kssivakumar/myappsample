@@ -23,14 +23,14 @@ print(p.getRed())
 p.setBlue(p.getGreen())
 print(p.getGreen(), p.getBlue())
 
+#Image Processing and Nested Iteration
+#Image processing refers to the ability to manipulate the individual pixels in a digital image.
+#In order to process all of the pixels, we need to be able to systematically visit all of the rows and columns in the image. The best way to do this is to use nested iteration.
+for i in range(5):
+    for j in range(3):
+        print(i, j)
 
-import image
-from PIL import Image
-#import image
-img = image.Image("luther.jpg")
-
-print(img.getWidth())
-print(img.getHeight())
-
-p = img.getPixel(45, 55)
-print(p.getRed(), p.getGreen(), p.getBlue())
+#The for i iteration is the outer iteration and the for j iteration is the inner iteration.
+#Each pass through the outer iteration will result in the complete processing of the inner iteration from beginning to end.
+#This means that the output from this nested iteration will show that for each value of i, all values of j will occur.
+#Here is the same example in activecode. Try it. Note that the value of i stays the same while the value of j changes. The inner iteration, in effect, is moving faster than the outer iteration.

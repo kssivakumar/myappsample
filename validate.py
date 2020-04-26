@@ -24,3 +24,7 @@ for x in range(0, 100):
     if (x%7==0):
         nl.append(str(x))
 print (','.join(nl))
+
+sports = ['cricket', 'football', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
+last = sports(range(3, ))
+print(last)
